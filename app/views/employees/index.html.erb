@@ -1,0 +1,17 @@
+<h1>Employees list</h1>
+<div class="container">
+<table class="table ">
+  <tr>
+    <th class ="text-danger">Name</th>
+    <th class ="text-danger">surname</th>
+    <th class ="text-danger">Time</th>
+  </tr>
+    <% @employees.each do |employee| %>
+    <tr>
+      <td><%=employee.name%></td>
+      <td><%=employee.surname%></td>
+      <td><%=employee.time%></td>
+    </tr>
+    <% end %>
+</table>
+</div>
